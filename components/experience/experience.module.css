@@ -1,0 +1,19 @@
+.experienceContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.experienceContainer {
+  border-bottom: 1px solid var(--border);
+}
+
+.description ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.description li {
+  margin-bottom: 0.5rem;
+}

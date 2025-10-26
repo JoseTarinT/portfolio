@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -8,7 +8,55 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+} */
+
+:root {
+  --card-bg: #ffffff;
+  --text-secondary: #4b5563;
+  --accent: #06b6d4;
+  --border: #d1d5db;
+  --foreground: #171717;
+  --background-gradient: linear-gradient(
+    to bottom right,
+    #f9fafb,
+    #f3f4f6,
+    #ffffff
+  );
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --card-bg: #1f2937;
+    --text-secondary: #9ca3af;
+    --accent: #06b6d4;
+    --border: #4b5563;
+    --border-secondary: #373f49;
+    --foreground: #ededed;
+    --background-gradient: linear-gradient(
+      to bottom right,
+      #111827,
+      #1f2937,
+      #000000
+    );
+  }
+}
+
+/* Example usage:
+body {
+  background: var(--background-gradient);
+}
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  color: var(--foreground);
+}
+.text-secondary {
+  color: var(--text-secondary);
+}
+a {
+  color: var(--accent);
+}
+*/
 
 html,
 body {
@@ -18,7 +66,7 @@ body {
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  background: var(--background-gradient);
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -31,7 +79,7 @@ body {
 }
 
 a {
-  color: inherit;
+  color: var(--accent);
   text-decoration: none;
 }
 
