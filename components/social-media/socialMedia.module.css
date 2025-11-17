@@ -1,0 +1,7 @@
+.mediaIcons {
+  grid-column: 1 / 3;
+  display: flex;
+  gap: 2rem;
+  justify-self: center;
+  text-align: center;
+}

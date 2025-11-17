@@ -2,11 +2,10 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 1rem;
-}
-
-.experienceContainer {
-  border-bottom: 1px solid var(--border);
+  margin: 1rem 99px;
+  padding: 80px;
+  border-radius: 30px;
+  background: var(--background-secundary);
 }
 
 .description ul {

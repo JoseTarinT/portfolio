@@ -1,26 +1,32 @@
 import { Experience } from "@/components/experience/experience";
 import styles from "./page.module.css";
+import { SocialMedia } from "@/components/social-media/socialMedia";
 
 export default function Home() {
   return (
-    <main>
+    <main className={styles.main}>
       <section className={styles.intro}>
-        <div className={styles.introName}>
-          <h1 className={styles.name}>Hi, I&apos;m Jose Tarin</h1>
-        </div>
-        <div className={styles.introResume}>
-          <p>
-            I&apos;ve worked on building reliable, high performance web
-            applications across diverse industries with a background in
-            microservices, serverless architectures and CI/CD release pipelines.
-            Focused on solving complex problems, learning new technologies and
-            creating customer focused applications that align with business
-            goals. A strong team player who thrives in agile environments,
-            contributing to sprint planning, stand-ups and retrospectives.
-          </p>
+        <div className={styles.introContent}>
+          <div className={styles.introName}>
+            <h1 className={styles.name}>Jose Tarin</h1>
+            <p className={styles.role}>Full-Stack Software Developer</p>
+          </div>
+          <div className={styles.introResume}>
+            <p className={styles.resumeText}>
+              I&apos;ve worked on building reliable, high performance web
+              applications across diverse industries with a background in
+              microservices, serverless architectures and CI/CD release
+              pipelines. Focused on solving complex problems, learning new
+              technologies and creating customer focused applications that align
+              with business goals. A strong team player who thrives in agile
+              environments, contributing to sprint planning, stand-ups and
+              retrospectives.
+            </p>
+          </div>
+          <SocialMedia />
         </div>
       </section>
-      <section className={styles.experience}>
+      <section id="experience" className={styles.experience}>
         <div className={styles.experienceTitle}>
           <h2>Experience</h2>
         </div>
@@ -56,6 +62,9 @@ Used Git and GitLab for version control and code collaboration, ensuring code qu
           technologies="GCP (Dialogflow CX, BigQuery), AWS (DynamoDB, S3), Docker, Node.js, Express, Redis, Cloud Foundry, React.js, RabbitMQ, WebSockets, GitLab, Object-Oriented Programming."
         />
       </section>
+      {/* <section className={styles.contactSection}>
+        <Contact />
+      </section> */}
     </main>
   );
 }

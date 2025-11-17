@@ -1,14 +1,22 @@
 import Header from "@/components/header/header";
 import "./globals.css";
 import { ThemeDetector } from "@/context/themeDetector";
-import { Footer } from "@/components/footer/footer";
-import { BackToTopButton } from "@/components/backToTopButton/backToTopButton";
+
+// const geistSans = Geist({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
+
+// const geistMono = Geist_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
 
 export const metadata = {
   title: "Jose Tarin",
   description: "Jose Tarin's portfolio website",
   icons: {
-    icon: "/my-favicon.svg",
+    icon: "/jtlogo.svg",
   },
 };
 
@@ -19,8 +27,6 @@ export default function RootLayout({ children }) {
         <ThemeDetector>
           <Header />
           {children}
-          <BackToTopButton />
-          <Footer />
         </ThemeDetector>
       </body>
     </html>

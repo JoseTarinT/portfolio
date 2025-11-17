@@ -1,0 +1,36 @@
+.main {
+  font-family: var(--font-geist-mono);
+  padding-left: 0;
+  margin: 0;
+  padding-top: 4.5rem;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  list-style-position: inside;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--background-secundary);
+  margin: 99px;
+  padding: 80px;
+  border-radius: 30px;
+}
+.contactMe {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: var(--foreground);
+}
+
+.p {
+  color: var(--foreground-secondary);
+  text-align: center;
+  width: 50%;
+}
+
+.socialMedia {
+  margin-top: 2rem;
+}
