@@ -83,3 +83,16 @@
   width: 60px;
   background: var(--text-secondary);
 }
+
+.copyright {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0px 4rem;
+}
+
+.stack {
+  font-size: 12px;
+  width: 25%;
+  color: var(--foreground-secondary);
+}

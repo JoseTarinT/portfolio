@@ -12,6 +12,11 @@ export const Footer = () => {
         <SocialMedia />
       </div>
       <div className={styles.copyright}>
+        <p className={styles.stack}>
+          Custom-built website, designed and developed by Jose Tarin. <br />
+          Built with Next.js using JavaScript and styled-components. Deployed on
+          Vercel.
+        </p>
         <p>© 2025 Jose Tarin. All rights reserved.</p>
       </div>
     </footer>
