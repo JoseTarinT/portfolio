@@ -8,6 +8,13 @@
   background: var(--background-secundary);
 }
 
+@media (max-width: 768px) {
+  .experienceContainer {
+    margin: 1rem 36px;
+    padding: 1rem 21px;
+  }
+}
+
 .description ul {
   list-style-type: disc;
   padding-left: 1.5rem;
