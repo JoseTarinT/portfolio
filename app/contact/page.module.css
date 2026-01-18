@@ -19,6 +19,20 @@
   padding: 80px;
   border-radius: 30px;
 }
+
+@media (max-width: 768px) {
+  .contact {
+    margin: 45px;
+  }
+}
+
+@media (max-width: 380px) {
+  .contact {
+    margin: 21px;
+    padding: 40px;
+  }
+}
+
 .contactMe {
   margin-bottom: 1.5rem;
   font-size: 2rem;
@@ -28,7 +42,6 @@
 .p {
   color: var(--foreground-secondary);
   text-align: center;
-  width: 50%;
 }
 
 .socialMedia {

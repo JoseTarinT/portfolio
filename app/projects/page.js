@@ -6,7 +6,19 @@ export default function Projects() {
     <main className={styles.main}>
       <h1 className={styles.comingSoon}>Projects</h1>
       <section className={styles.projects}>
-        <Project name="Project 1" description="Project 1 description" />
+        <Project
+          name="TaskFlow"
+          description={
+            <>
+              TaskFlow is a full-stack web application that allows users to
+              manage tasks with authentication. It features a secure backend API
+              with JWT-based authentication and a modern Next.js frontend with
+              client-side data fetching, state management, and protected routes.
+              Users can create, view, update, and complete tasks in a
+              personalized dashboard. <br /> COMING SOON
+            </>
+          }
+        />
         <Project
           name="ChatRule"
           description="An intelligent chatbot powered by a Large Language Model (LLM) that allows users to define custom rules for handling structured data. For example, contracts can be automatically classified and routed based on conditions such as contract type or country. The system demonstrates how AI can be combined with rule-based logic to automate decision-making and streamline business workflows. Currently in beta."
