@@ -4,7 +4,7 @@ import { Project } from "@/components/projectComponent/project";
 export default function Projects() {
   return (
     <main className={styles.main}>
-      <h1 className={styles.comingSoon}>Projects</h1>
+      <h1 className={styles.projectsTitle}>Projects</h1>
       <section className={styles.projects}>
         <Project
           name="TaskFlow"

@@ -9,7 +9,7 @@ export default function Home() {
         <div className={styles.introContent}>
           <div className={styles.introName}>
             <h1 className={styles.name}>Jose Tarin</h1>
-            <p className={styles.role}>Full-Stack Software Developer</p>
+            <h2 className={styles.role}>Full-Stack Software Developer</h2>
           </div>
           <div className={styles.introResume}>
             <p className={styles.resumeText}>
@@ -28,7 +28,7 @@ export default function Home() {
       </section>
       <section id="experience" className={styles.experience}>
         <div className={styles.experienceTitle}>
-          <h2>Experience</h2>
+          <h2>Work Experience</h2>
         </div>
         <Experience
           company="ABC (Australian Broadcasting Corporation) - News Website Team
