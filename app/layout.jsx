@@ -27,7 +27,7 @@ export const metadata = {
     siteName: "Jose Tarin Portfolio",
     images: [
       {
-        url: "./public/jtlogo.png",
+        url: "my-favicon.png",
         width: 1200,
         height: 630,
         alt: "Jose Tarin Portfolio",
@@ -49,6 +49,24 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        {/* Structured data for Google */}
+        <Script
+          id="schema-person"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Jose Tarin",
+              url: "https://www.josetarin.dev",
+              image: "https://www.josetarin.dev/my-favicon.png",
+              // sameAs: [
+              //   "https://github.com/yourusername",
+              //   "https://linkedin.com/in/yourusername",
+              // ],
+            }),
+          }}
+        />
         <ThemeDetector>
           <Header />
           {children}
