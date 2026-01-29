@@ -1,3 +1,4 @@
+import Script from "next/script";
 import Header from "@/components/header/header";
 import "./globals.css";
 import { ThemeDetector } from "@/context/themeDetector";
